@@ -1,7 +1,7 @@
 # StatusView：简单的 Android 页面多状态布局切换控件
 
 ### 一、效果预览
-![](images/demo.gif)
+![](images/demos.gif)
 ### 二、主要功能
 * 可在 Activity、Fragment 、XML 中使用，可作用于 XML 的根布局 View 或其子 View
 * 默认支持 Loading、Empty、Error 三种状态布局，可进行常规配置
