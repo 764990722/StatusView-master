@@ -9,14 +9,14 @@
 * 状态布局懒加载，仅在初次显示时初始化
 
 ### 三、使用
-```
+```·
 ##### 1、切换状态布局
 ```java
 statusView.showLoadingView();
 statusView.showEmptyView();
 statusView.showErrorView();
 statusView.showContentView(); // 即原始的页面内容布局
-```
+```·
 ##### 2、更自由的用法
 如果不想局限于 Loading、Empty、Error 三种状态，那么下面的用法会更适合你：
 ```java
@@ -26,4 +26,4 @@ statusView.setStatusView(int index, @LayoutRes int layoutId)
 statusView.setOnStatusViewConvertListener(int index, StatusViewConvertListener listener)
 // 显示指定索引的状态布局
 statusView.showStatusView(int index)
-```
+```·
