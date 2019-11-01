@@ -107,21 +107,15 @@ public class StatusView extends FrameLayout {
         return init(contentView);
     }
 
-    /**
+     /**
      * 在Fragment中的初始化方法
-     *
-     * @param fragment
      * @param viewId   使用多状态布局的 ViewId
-     * @return
      */
-    public static StatusView init(Fragment fragment, @IdRes int viewId) {
-        View rootView = fragment.getView();
-        View contentView = null;
-        if (rootView != null) {
-            contentView = rootView.findViewById(viewId);
-        }
+    public static StatusView init(View view, @IdRes int viewId) {
+        View contentView = view.findViewById(viewId);
         return init(contentView);
     }
+    
 
     /**
      * 用 StatusView 替换要使用多状态布局的 View
